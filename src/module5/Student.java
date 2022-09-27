@@ -1,5 +1,6 @@
 package module5;
 
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Map;
@@ -20,14 +21,15 @@ public class Student {
         h.put("Ravi", 84);
         System.out.println(h.values());
         System.out.println(h);
+        int max = Collections.max(h.values());
 
-        Integer max = (int) Double.MIN_VALUE;
-        for (Object key : h.keySet()) {
-            Integer tmp = h.get(key);
-            if (tmp.compareTo(max) > 0) {
-                max = tmp;
-            }
-        }
+        // Integer max = (int) Double.MIN_VALUE;
+        // for (Object key : h.keySet()) {
+        // Integer tmp = h.get(key);
+        // if (tmp.compareTo(max) > 0) {
+        // max = tmp;
+        // }
+        // }
 
         System.out.println("Maximum Marks is : " + max);
     }
